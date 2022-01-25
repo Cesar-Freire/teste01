@@ -1,0 +1,68 @@
+/* -- Responsivo -- */
+
+/* -- Container 1 -- */
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .introducao h1 {
+    font-size: 1.5rem;
+  }
+  .introducao p {
+    font-size: 0.875rem;
+  }
+  .introducao a {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .introducao {
+    padding: 20px;
+    gap: 10px;
+    text-align: left;
+    justify-items: left;
+  }
+  .introducao a {
+    padding: 5px 10px;
+    font-weight: 200;
+  }
+}
+
+/* -- Container 2 -- */
+
+@media (max-width: 960px) {
+  .subtitulo {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 760px) {
+  .subtitulo {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subtitulo {
+    font-size: 42px;
+    text-align: left;
+    justify-items: left;
+  }
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+  .introducao h1::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #ee2211;
+    position: absolute;
+    top: 26px;
+    right: 202px;
+  }
+}
